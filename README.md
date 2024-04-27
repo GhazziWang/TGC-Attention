@@ -1,4 +1,4 @@
-![image](https://github.com/GhazziWang/TGC-Attention/assets/49545379/26f5e3e4-243a-4f40-a973-ee66a000906e)# TGC-Attention
+# TGC-Attention
 Abstract: Efficient prediction of bike-sharing usage is pivotal for enhancing user satisfaction and optimizing operational costs for service providers. In this paper, we propose a novel model, the Temporal Graph Convolutional Attention Network (TGC-Attention), which leverages Temporal Convolution Network (TCN) to capture node correlations and updates the adjacency matrix of the Graph Convolutional Network (GCN). The model integrates attention prediction with channel embedding based on shapelet-kmeans and incorporates a residual block based on series decomposition. Through real-world data comparison among different time series prediction models, our study yields intriguing insights for further exploration in this domain.
 ### Overview
 ![image](https://github.com/GhazziWang/TGC-Attention/assets/49545379/9d9668cd-2d97-495e-b785-dc1cf836c2e5)
