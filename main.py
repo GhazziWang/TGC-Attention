@@ -15,7 +15,7 @@ shapelet_length = 10  # Length of each shapelet
 num_clusters = 3 #Number of channel label
 
 # Load edge features from od_matrix_filter.pt
-edge_features = torch.load("D:/Research/2024-Bicycle usage prediction/TGC_Attention/od_matrix_filtered.pt")
+edge_features = torch.load("./od_matrix_filtered.pt")
 # Calculate summary statistics for each row to generate node features
 node_features = edge_features.sum(dim=1)  # Sum along the rows to get node features
 # Print the shape of the node features tensor
