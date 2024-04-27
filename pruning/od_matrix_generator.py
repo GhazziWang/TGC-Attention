@@ -9,7 +9,11 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # List of CSV directory
-directory_path = "./data"
+directory_path = "../data"
+
+# Define start and end dates
+start_date = datetime(2022, 1, 1).date()  # Convert to date
+end_date = datetime(2024, 2, 28).date()    # Convert to date
 
 # Read each CSV file into a DataFrame
 dataframes = spark.read.csv(directory_path, header=True, inferSchema=True)
@@ -45,10 +49,6 @@ all_unique_stations = set(unique_start_stations + unique_end_stations)
 
 # Calculate the number of unique stations
 num_stations = len(all_unique_stations)
-
-# Define start and end dates
-start_date = datetime(2022, 1, 1).date()  # Convert to date
-end_date = datetime(2024, 2, 28).date()    # Convert to date
 
 # Calculate the number of days between the start and end dates
 num_days = (end_date - start_date).days
